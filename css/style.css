@@ -1,0 +1,51 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* main sector */
+.container{
+  width:960px;
+  height:600px;
+  margin: 10px;
+  /* background-color: grey; */
+}
+
+.row{
+  /* background-color: lightblue; */
+  margin-bottom: 20px;
+}
+/* imagini sector */
+.box{
+  /* width: 100px;
+  height: 100px;
+  background-color: red */
+  display: inline-block;
+  position: relative;
+}
+
+.box .discount{
+  position: absolute;
+  top:0;
+  right:0;
+  background-color: green;
+}
+
+.box:nth-child(even) .discount{
+  background-color: red;
+}
+
+.box .heart {
+  display: none;
+  position: absolute;
+  bottom: 3%;
+  left:0;
+  font-size: 22px;
+  width:100%;
+  color: red;
+  text-align: center;
+}
+
+.box:hover  .heart {
+  display: block;
+}
